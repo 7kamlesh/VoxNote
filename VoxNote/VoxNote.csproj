@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <SpaRoot>..\VoxNote.Client\</SpaRoot>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Properties\launchSettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.11" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <!-- Build Vue.js client and copy to wwwroot -->
+  <Target Name="BuildVueClient" BeforeTargets="Build" Condition="!Exists('wwwroot\index.html')">
+    <Message Importance="high" Text="Building Vue.js client..." />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build" />
+    <ItemGroup>
+      <VueDistFiles Include="$(SpaRoot)dist\**\*" />
+    </ItemGroup>
+    <Copy SourceFiles="@(VueDistFiles)" DestinationFolder="wwwroot\%(RecursiveDir)" />
+  </Target>
+
+  <!-- Publish: always rebuild the client -->
+  <Target Name="PublishVueClient" BeforeTargets="ComputeFilesToPublish">
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />
+    <Exec WorkingDirectory="$(SpaRoot)" Command="npm run build" />
+    <ItemGroup>
+      <VueDistFiles Include="$(SpaRoot)dist\**\*" />
+    </ItemGroup>
+    <Copy SourceFiles="@(VueDistFiles)" DestinationFolder="wwwroot\%(RecursiveDir)" />
+    <ItemGroup>
+      <DistFiles Include="wwwroot\**" />
+      <ResolvedFileToPublish Include="@(DistFiles->'%(FullPath)')" Exclude="@(ResolvedFileToPublish)">
+        <RelativePath>wwwroot\%(DistFiles.RecursiveDir)%(DistFiles.Filename)%(DistFiles.Extension)</RelativePath>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </ResolvedFileToPublish>
+    </ItemGroup>
+  </Target>
+
+</Project>
