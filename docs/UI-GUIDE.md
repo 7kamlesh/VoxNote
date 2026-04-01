@@ -2,7 +2,7 @@
 
 A visual walkthrough of every screen in the VoxNote application.
 
-> **Tip:** Place the corresponding screenshot images in the `docs/screenshots/` folder using the filenames referenced below. Then the images will render automatically on GitHub.
+> **Note:** To make the images render on GitHub, place the screenshot `.png` files in `docs/screenshots/` and push to the `main` branch.
 
 ---
 
@@ -22,7 +22,9 @@ A visual walkthrough of every screen in the VoxNote application.
 
 ## 1. Login / Register
 
-![Login Screen](screenshots/01-login.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/7kamlesh/VoxNote/main/docs/screenshots/01-login.png" alt="Login Screen" width="700" />
+</p>
 
 | Element | Description |
 |---------|-------------|
@@ -41,7 +43,9 @@ A visual walkthrough of every screen in the VoxNote application.
 
 ## 2. Record a Voice Note — Idle State
 
-![Idle Recording](screenshots/02-record-idle.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/7kamlesh/VoxNote/main/docs/screenshots/02-record-idle.png" alt="Idle Recording" width="700" />
+</p>
 
 | Element | Description |
 |---------|-------------|
@@ -59,7 +63,9 @@ A visual walkthrough of every screen in the VoxNote application.
 
 ## 3. Record a Voice Note — Recording in Progress
 
-![Recording Active](screenshots/03-recording-active.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/7kamlesh/VoxNote/main/docs/screenshots/03-recording-active.png" alt="Recording Active" width="700" />
+</p>
 
 | Element | Description |
 |---------|-------------|
@@ -76,7 +82,9 @@ A visual walkthrough of every screen in the VoxNote application.
 
 ## 4. Record a Voice Note — Microphone Permission Denied
 
-![Mic Denied](screenshots/04-mic-denied.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/7kamlesh/VoxNote/main/docs/screenshots/04-mic-denied.png" alt="Microphone Permission Denied" width="700" />
+</p>
 
 | Element | Description |
 |---------|-------------|
@@ -92,7 +100,9 @@ A visual walkthrough of every screen in the VoxNote application.
 
 ## 5. Review & Edit Transcription Before Saving
 
-![Note Editor](screenshots/05-note-editor.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/7kamlesh/VoxNote/main/docs/screenshots/05-note-editor.png" alt="Note Editor" width="700" />
+</p>
 
 | Element | Description |
 |---------|-------------|
@@ -110,7 +120,9 @@ A visual walkthrough of every screen in the VoxNote application.
 
 ## 6. Note Saved Successfully
 
-![Note Saved](screenshots/06-note-saved.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/7kamlesh/VoxNote/main/docs/screenshots/06-note-saved.png" alt="Note Saved Successfully" width="700" />
+</p>
 
 | Element | Description |
 |---------|-------------|
@@ -126,7 +138,9 @@ A visual walkthrough of every screen in the VoxNote application.
 
 ## 7. My Notes — List View
 
-![My Notes](screenshots/07-my-notes.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/7kamlesh/VoxNote/main/docs/screenshots/07-my-notes.png" alt="My Notes List" width="700" />
+</p>
 
 | Element | Description |
 |---------|-------------|
@@ -152,7 +166,9 @@ A visual walkthrough of every screen in the VoxNote application.
 
 ## 8. Admin Dashboard — All Notes Tab
 
-![Admin All Notes](screenshots/08-admin-all-notes.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/7kamlesh/VoxNote/main/docs/screenshots/08-admin-all-notes.png" alt="Admin Dashboard - All Notes" width="700" />
+</p>
 
 | Element | Description |
 |---------|-------------|
@@ -178,12 +194,14 @@ A visual walkthrough of every screen in the VoxNote application.
 
 ## 9. Admin Dashboard — Users Tab & User Notes Modal
 
-![Admin Users Tab](screenshots/09-admin-users-modal.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/7kamlesh/VoxNote/main/docs/screenshots/09-admin-users-modal.png" alt="Admin Dashboard - Users Tab with Modal" width="700" />
+</p>
 
 | Element | Description |
 |---------|-------------|
 | **Users tab** (active) | Lists all registered users |
-| **User cards** | Each shows: **Username/email**, **Role badge** (yellow "ADMIN" or blue "USER"), **Note count**, **Join date**, and a **"View Notes"** button |
+| **User cards** | Each shows: **Username/email**, **Role badge** (yellow `ADMIN` or blue `USER`), **Note count**, **Join date**, and a **"View Notes"** button |
 | **"View Notes" button** | Opens a modal overlay showing that user's notes |
 | **Modal** | Titled *"Notes by {username}"* with a **Close** button. Displays the user's notes as read-only cards with title, content preview, and date. |
 
@@ -207,7 +225,7 @@ A visual walkthrough of every screen in the VoxNote application.
 
 ---
 
-## Navigation Summary
+## Navigation Flow
 
 ```
 Login (/login)
@@ -232,7 +250,7 @@ Login (/login)
 
 | Element | Location | Description |
 |---------|----------|-------------|
-| **??? VoxNote** logo | Navbar (left) | Always visible; links to Home |
+| ??? **VoxNote** logo | Navbar (left) | Always visible; links to Home |
 | **Admin** link | Navbar (right) | Only visible for Admin users; navigates to `/admin` |
 | **Logout** button | Navbar (right) | Clears JWT token from localStorage and redirects to Login |
 | **Purple theme** | Throughout | Primary color `#4f46e5` (indigo) used for navbar, buttons, and accents |
@@ -241,7 +259,7 @@ Login (/login)
 
 ## Screenshot Checklist
 
-Place these files in `docs/screenshots/` to complete the wiki:
+Save your screenshots to `docs/screenshots/` with these filenames, then push to `main`:
 
 | Filename | Screen |
 |----------|--------|
