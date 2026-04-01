@@ -8,6 +8,9 @@ namespace VoxNote.Controllers;
 [ApiController]
 [Route("api/[controller]")]
 [Authorize(Roles = Roles.Admin)]
+
+
+
 public class AdminController : ControllerBase
 {
     private readonly IAdminService _adminService;
