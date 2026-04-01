@@ -21,7 +21,7 @@ A visual walkthrough of every screen in the VoxNote application.
 ## 1. Login / Register
 
 <p align="center">
-  <img src="screenshots/01-login.png" alt="Login Screen" width="700" />
+  <img src="screenshots/image (2).png" alt="Login Screen" width="700" />
 </p>
 
 | Element | Description |
@@ -42,7 +42,7 @@ A visual walkthrough of every screen in the VoxNote application.
 ## 2. Record a Voice Note — Idle State
 
 <p align="center">
-  <img src="screenshots/02-record-idle.png" alt="Idle Recording" width="700" />
+  <img src="screenshots/image (3).png" alt="Idle Recording" width="700" />
 </p>
 
 | Element | Description |
@@ -62,7 +62,7 @@ A visual walkthrough of every screen in the VoxNote application.
 ## 3. Record a Voice Note — Recording in Progress
 
 <p align="center">
-  <img src="screenshots/03-recording-active.png" alt="Recording Active" width="700" />
+  <img src="screenshots/image.png" alt="Recording Active" width="700" />
 </p>
 
 | Element | Description |
@@ -81,7 +81,7 @@ A visual walkthrough of every screen in the VoxNote application.
 ## 4. Record a Voice Note — Microphone Permission Denied
 
 <p align="center">
-  <img src="screenshots/04-mic-denied.png" alt="Microphone Permission Denied" width="700" />
+  <img src="screenshots/image (5).png" alt="Microphone Permission Denied" width="700" />
 </p>
 
 | Element | Description |
@@ -99,7 +99,7 @@ A visual walkthrough of every screen in the VoxNote application.
 ## 5. Review & Edit Transcription Before Saving
 
 <p align="center">
-  <img src="screenshots/05-note-editor.png" alt="Note Editor" width="700" />
+  <img src="screenshots/image (6).png" alt="Note Editor" width="700" />
 </p>
 
 | Element | Description |
@@ -119,7 +119,7 @@ A visual walkthrough of every screen in the VoxNote application.
 ## 6. Note Saved Successfully
 
 <p align="center">
-  <img src="screenshots/06-note-saved.png" alt="Note Saved Successfully" width="700" />
+  <img src="screenshots/image (4).png" alt="Note Saved Successfully" width="700" />
 </p>
 
 | Element | Description |
@@ -137,7 +137,7 @@ A visual walkthrough of every screen in the VoxNote application.
 ## 7. My Notes — List View
 
 <p align="center">
-  <img src="screenshots/07-my-notes.png" alt="My Notes List" width="700" />
+  <img src="screenshots/image (1).png" alt="My Notes List" width="700" />
 </p>
 
 | Element | Description |
@@ -165,7 +165,7 @@ A visual walkthrough of every screen in the VoxNote application.
 ## 8. Admin Dashboard — All Notes Tab
 
 <p align="center">
-  <img src="screenshots/08-admin-all-notes.png" alt="Admin Dashboard - All Notes" width="700" />
+  <img src="screenshots/image (8).png" alt="Admin Dashboard - All Notes" width="700" />
 </p>
 
 | Element | Description |
@@ -193,7 +193,7 @@ A visual walkthrough of every screen in the VoxNote application.
 ## 9. Admin Dashboard — Users Tab & User Notes Modal
 
 <p align="center">
-  <img src="screenshots/09-admin-users-modal.png" alt="Admin Dashboard - Users Tab with Modal" width="700" />
+  <img src="screenshots/image (7).png" alt="Admin Dashboard - Users Tab with Modal" width="700" />
 </p>
 
 | Element | Description |
