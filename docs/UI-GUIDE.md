@@ -2,8 +2,6 @@
 
 A visual walkthrough of every screen in the VoxNote application.
 
-> **Note:** To make the images render on GitHub, place the screenshot `.png` files in `docs/screenshots/` and push to the `main` branch.
-
 ---
 
 ## Table of Contents
@@ -23,7 +21,7 @@ A visual walkthrough of every screen in the VoxNote application.
 ## 1. Login / Register
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/7kamlesh/VoxNote/main/docs/screenshots/01-login.png" alt="Login Screen" width="700" />
+  <img src="screenshots/01-login.png" alt="Login Screen" width="700" />
 </p>
 
 | Element | Description |
@@ -44,7 +42,7 @@ A visual walkthrough of every screen in the VoxNote application.
 ## 2. Record a Voice Note — Idle State
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/7kamlesh/VoxNote/main/docs/screenshots/02-record-idle.png" alt="Idle Recording" width="700" />
+  <img src="screenshots/02-record-idle.png" alt="Idle Recording" width="700" />
 </p>
 
 | Element | Description |
@@ -64,7 +62,7 @@ A visual walkthrough of every screen in the VoxNote application.
 ## 3. Record a Voice Note — Recording in Progress
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/7kamlesh/VoxNote/main/docs/screenshots/03-recording-active.png" alt="Recording Active" width="700" />
+  <img src="screenshots/03-recording-active.png" alt="Recording Active" width="700" />
 </p>
 
 | Element | Description |
@@ -83,7 +81,7 @@ A visual walkthrough of every screen in the VoxNote application.
 ## 4. Record a Voice Note — Microphone Permission Denied
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/7kamlesh/VoxNote/main/docs/screenshots/04-mic-denied.png" alt="Microphone Permission Denied" width="700" />
+  <img src="screenshots/04-mic-denied.png" alt="Microphone Permission Denied" width="700" />
 </p>
 
 | Element | Description |
@@ -101,7 +99,7 @@ A visual walkthrough of every screen in the VoxNote application.
 ## 5. Review & Edit Transcription Before Saving
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/7kamlesh/VoxNote/main/docs/screenshots/05-note-editor.png" alt="Note Editor" width="700" />
+  <img src="screenshots/05-note-editor.png" alt="Note Editor" width="700" />
 </p>
 
 | Element | Description |
@@ -121,7 +119,7 @@ A visual walkthrough of every screen in the VoxNote application.
 ## 6. Note Saved Successfully
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/7kamlesh/VoxNote/main/docs/screenshots/06-note-saved.png" alt="Note Saved Successfully" width="700" />
+  <img src="screenshots/06-note-saved.png" alt="Note Saved Successfully" width="700" />
 </p>
 
 | Element | Description |
@@ -139,7 +137,7 @@ A visual walkthrough of every screen in the VoxNote application.
 ## 7. My Notes — List View
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/7kamlesh/VoxNote/main/docs/screenshots/07-my-notes.png" alt="My Notes List" width="700" />
+  <img src="screenshots/07-my-notes.png" alt="My Notes List" width="700" />
 </p>
 
 | Element | Description |
@@ -167,7 +165,7 @@ A visual walkthrough of every screen in the VoxNote application.
 ## 8. Admin Dashboard — All Notes Tab
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/7kamlesh/VoxNote/main/docs/screenshots/08-admin-all-notes.png" alt="Admin Dashboard - All Notes" width="700" />
+  <img src="screenshots/08-admin-all-notes.png" alt="Admin Dashboard - All Notes" width="700" />
 </p>
 
 | Element | Description |
@@ -195,7 +193,7 @@ A visual walkthrough of every screen in the VoxNote application.
 ## 9. Admin Dashboard — Users Tab & User Notes Modal
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/7kamlesh/VoxNote/main/docs/screenshots/09-admin-users-modal.png" alt="Admin Dashboard - Users Tab with Modal" width="700" />
+  <img src="screenshots/09-admin-users-modal.png" alt="Admin Dashboard - Users Tab with Modal" width="700" />
 </p>
 
 | Element | Description |
@@ -254,21 +252,3 @@ Login (/login)
 | **Admin** link | Navbar (right) | Only visible for Admin users; navigates to `/admin` |
 | **Logout** button | Navbar (right) | Clears JWT token from localStorage and redirects to Login |
 | **Purple theme** | Throughout | Primary color `#4f46e5` (indigo) used for navbar, buttons, and accents |
-
----
-
-## Screenshot Checklist
-
-Save your screenshots to `docs/screenshots/` with these filenames, then push to `main`:
-
-| Filename | Screen |
-|----------|--------|
-| `01-login.png` | Login / Register page |
-| `02-record-idle.png` | Record page — idle state with Start Recording button |
-| `03-recording-active.png` | Record page — active recording with timer and Stop button |
-| `04-mic-denied.png` | Record page — microphone permission denied error |
-| `05-note-editor.png` | Record page — title & content editor before saving |
-| `06-note-saved.png` | Record page — "Note saved successfully" confirmation |
-| `07-my-notes.png` | My Notes — list of saved notes with Edit/Delete |
-| `08-admin-all-notes.png` | Admin Dashboard — All Notes tab |
-| `09-admin-users-modal.png` | Admin Dashboard — Users tab with View Notes modal |
